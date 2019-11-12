@@ -9,6 +9,7 @@ spring:
   kafka:
     bootstrap-servers: 192.168.211.50:9092
 hystrix:
+  shareSecurityContext: true
   command:
     default:
       execution:
