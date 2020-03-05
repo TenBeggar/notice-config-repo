@@ -3,11 +3,11 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.211.50:3306/task?useUnicode=true&characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.72.50:3306/task?useUnicode=true&characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 76543
   kafka:
-    bootstrap-servers: 192.168.211.50:9092
+    bootstrap-servers: 192.168.72.50:9092
 hystrix:
   shareSecurityContext: true
   command:
