@@ -8,10 +8,6 @@ spring:
     password: 76543
   kafka:
     bootstrap-servers: 192.168.72.50:9092
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
 hystrix:
   shareSecurityContext: true
   command:
@@ -19,12 +15,12 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 3000
+            timeoutInMilliseconds: 5000
 feign:
   hystrix:
     enabled: true
   client:
     config:
       default:
-        connectTimeout: 1000
-        readTimeout: 2000
+        connectTimeout: 2000
+        readTimeout: 3000
