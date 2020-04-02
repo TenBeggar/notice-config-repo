@@ -15,7 +15,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 30000
 feign:
   hystrix:
     enabled: true
@@ -23,4 +23,4 @@ feign:
     config:
       default:
         connectTimeout: 10000
-        readTimeout: 60000
+        readTimeout: 30000
